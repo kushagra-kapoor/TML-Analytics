@@ -1,15 +1,61 @@
 import streamlit as st
 import time
 import markdown
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Setup page config
+st.set_page_config(page_title="TML Analytics", page_icon="⚡", layout="wide")
+
+# --- SECURITY GATEWAY ---
+def check_password():
+    """Returns `True` if the user has the correct password."""
+    # First check env (local .env or Streamlit Cloud env injection), fallback to st.secrets
+    correct_password = os.getenv("APP_PASSWORD")
+    if not correct_password:
+        try:
+            correct_password = st.secrets.get("APP_PASSWORD")
+        except Exception:
+            pass
+
+    if "password_correct" not in st.session_state:
+        st.session_state["password_correct"] = False
+
+    if st.session_state["password_correct"]:
+        return True
+
+    # Show input for password
+    st.markdown("""
+    <div style="text-align: center; margin-top: 100px;">
+        <h1 style="margin: 0; font-size: 42px; font-weight: 900; letter-spacing: -2px; color: #fff; text-transform: uppercase; text-shadow: 0 0 20px rgba(0, 136, 255, 0.4);">
+            <span style="color: #0088ff;">TML</span> Analytics
+        </h1>
+        <div style="color: #888; font-size: 12px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; margin-top: 5px; margin-bottom: 30px;">
+            Restricted Institutional Terminal
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    col1, col2, col3 = st.columns([1, 1, 1])
+    with col2:
+        password = st.text_input("Password", type="password", label_visibility="hidden", placeholder="Enter System Password...")
+        if password:
+            if password == correct_password:
+                st.session_state["password_correct"] = True
+                st.rerun()
+            else:
+                st.error("🔒 Access Denied: Incorrect Password")
+    return False
+
+if not check_password():
+    st.stop()
+# --- END SECURITY GATEWAY ---
 
 from data_engine import get_latest_tml_snapshot
 from technical_engine import calculate_buy_readiness
 from analyst_engine import fetch_google_news_rss, generate_ibd_brief
-
-# Setup page config
-st.set_page_config(page_title="TML Analytics", page_icon="📈", layout="wide")
-
-st.set_page_config(page_title="TML Analytics", page_icon="⚡", layout="wide")
 
 # Custom CSS for Premium Design
 st.markdown("""
