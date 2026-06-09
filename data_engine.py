@@ -2,6 +2,8 @@ import sqlite3
 import pandas as pd
 import os
 import json
+import platform
+import streamlit as st
 
 LOCAL_DB_PATH = r"C:\projects\Kush Tracker\kush_tracker.db"
 JSON_SNAPSHOT_PATH = os.path.join(os.path.dirname(__file__), "tml_snapshot.json")
@@ -14,11 +16,11 @@ def get_latest_tml_snapshot(market: str = 'INDIA') -> list:
     Returns the top 20 True Market Leaders for the selected market.
     Auto-detects Cloud vs Local environment.
     """
-    if os.path.exists(LOCAL_DB_PATH):
-        # Local Mode: Connect directly to the SQLite database
+    if os.name == 'nt' and os.path.exists(LOCAL_DB_PATH):
+        # Windows Mode: Connect directly to the SQLite database
         return _fetch_from_db(market)
     else:
-        # Cloud Mode: Fallback to the synced JSON snapshot
+        # Linux/Cloud Mode: Fallback to the synced JSON snapshot
         return _fetch_from_json(market)
 
 def _fetch_from_db(market: str) -> list:
@@ -26,13 +28,13 @@ def _fetch_from_db(market: str) -> list:
     cursor = conn.cursor()
     
     try:
-        # Get the most recent date available for this market
         cursor.execute('''
             SELECT MAX(date) FROM tml_snapshot WHERE market = ?
         ''', (market,))
         
         latest_date_result = cursor.fetchone()
         if not latest_date_result or not latest_date_result[0]:
+            st.error(f"DB Error: No dates found in DB for {market}")
             return []
             
         latest_date = latest_date_result[0]
@@ -56,16 +58,15 @@ def _fetch_from_db(market: str) -> list:
             })
         return results
     except Exception as e:
-        print(f"Error fetching TMLs from DB: {e}")
+        st.error(f"Error fetching TMLs from DB: {str(e)}")
         return []
     finally:
         conn.close()
 
 def _fetch_from_json(market: str) -> list:
-    import streamlit as st
     try:
         if not os.path.exists(JSON_SNAPSHOT_PATH):
-            st.error(f"Error: Neither DB nor JSON snapshot found at {JSON_SNAPSHOT_PATH}. Cannot load data.")
+            st.error(f"Error: JSON snapshot not found at {JSON_SNAPSHOT_PATH}. Cannot load data.")
             return []
             
         with open(JSON_SNAPSHOT_PATH, "r", encoding="utf-8") as f:
@@ -84,6 +85,10 @@ def _fetch_from_json(market: str) -> list:
                 'industry': row['industry'],
                 'db_action': row['action_status']
             })
+            
+        if len(results) == 0:
+            st.warning(f"Warning: JSON loaded but it was empty for {market}")
+            
         return results
     except Exception as e:
         st.error(f"Exception fetching TMLs from JSON: {str(e)}")
