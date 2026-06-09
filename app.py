@@ -20,6 +20,9 @@ def check_password():
         except Exception:
             pass
 
+    if correct_password:
+        correct_password = str(correct_password).strip().strip('"').strip("'")
+
     if "password_correct" not in st.session_state:
         st.session_state["password_correct"] = False
 
@@ -40,13 +43,17 @@ def check_password():
     
     col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
-        password = st.text_input("Password", type="password", label_visibility="hidden", placeholder="Enter System Password...")
-        if password:
-            if password == correct_password:
-                st.session_state["password_correct"] = True
-                st.rerun()
-            else:
-                st.error("🔒 Access Denied: Incorrect Password")
+        if not correct_password:
+            st.error("⚠️ SYSTEM ERROR: The APP_PASSWORD secret is missing from Streamlit Cloud Secrets. Please add it via the 'Manage App' -> 'Settings' -> 'Secrets' menu.")
+        else:
+            password = st.text_input("Password", type="password", label_visibility="hidden", placeholder="Enter System Password...")
+            if password:
+                # Also strip user input just in case they added a space
+                if password.strip() == correct_password:
+                    st.session_state["password_correct"] = True
+                    st.rerun()
+                else:
+                    st.error("🔒 Access Denied: Incorrect Password")
     return False
 
 if not check_password():
