@@ -1,286 +1,286 @@
 {
     "INDIA": [
         {
-            "ticker": "APOLLO.NS",
-            "rank": 1,
-            "tml_score": 106.6,
-            "industry": "Aerospace & Defense",
-            "action_status": "\ud83d\udea8 Extended"
-        },
-        {
-            "ticker": "CUPID.NS",
-            "rank": 2,
-            "tml_score": 106.3,
-            "industry": "Household & Personal Products",
-            "action_status": "\ud83d\udfe1 Building Base"
-        },
-        {
-            "ticker": "MODISONLTD.NS",
-            "rank": 2,
-            "tml_score": 105.8,
-            "industry": "Electrical Equipment & Parts",
-            "action_status": "\ud83d\udea8 Extended"
-        },
-        {
             "ticker": "SASKEN.NS",
-            "rank": 4,
-            "tml_score": 104.6,
+            "rank": 1,
+            "tml_score": 111.4,
             "industry": "Information Technology Services",
             "action_status": "\ud83d\udea8 Extended"
         },
         {
-            "ticker": "SATIN.NS",
-            "rank": 5,
-            "tml_score": 102.5,
-            "industry": "Credit Services",
+            "ticker": "JNKINDIA.NS",
+            "rank": 2,
+            "tml_score": 108.9,
+            "industry": "Specialty Industrial Machinery",
             "action_status": "\ud83d\udea8 Extended"
         },
         {
-            "ticker": "THANGAMAYL.NS",
+            "ticker": "CUPID.NS",
             "rank": 3,
-            "tml_score": 101.4,
+            "tml_score": 107.2,
+            "industry": "Household & Personal Products",
+            "action_status": "\ud83d\udea8 Extended"
+        },
+        {
+            "ticker": "RPEL.NS",
+            "rank": 4,
+            "tml_score": 106.9,
+            "industry": "Chemicals",
+            "action_status": "\ud83d\udea8 Extended"
+        },
+        {
+            "ticker": "APOLLO.NS",
+            "rank": 5,
+            "tml_score": 106.0,
+            "industry": "Aerospace & Defense",
+            "action_status": "\ud83d\udea8 Extended"
+        },
+        {
+            "ticker": "SATIN.NS",
+            "rank": 6,
+            "tml_score": 102.0,
+            "industry": "Credit Services",
+            "action_status": "\ud83d\udd25 Tight VCP"
+        },
+        {
+            "ticker": "MTARTECH.NS",
+            "rank": 7,
+            "tml_score": 100.5,
+            "industry": "Specialty Industrial Machinery",
+            "action_status": "\ud83d\udcc9 21 EMA Pullback"
+        },
+        {
+            "ticker": "THANGAMAYL.NS",
+            "rank": 8,
+            "tml_score": 99.9,
             "industry": "Luxury Goods",
             "action_status": "\ud83d\udea8 Extended"
         },
         {
-            "ticker": "MTARTECH.NS",
-            "rank": 4,
-            "tml_score": 101.1,
-            "industry": "Specialty Industrial Machinery",
-            "action_status": "\ud83d\udcc9 21 EMA Pullback"
-        },
-        {
-            "ticker": "ACUTAAS.NS",
-            "rank": 5,
-            "tml_score": 100.0,
-            "industry": "Specialty Chemicals",
-            "action_status": "\ud83d\udfe1 Building Base"
-        },
-        {
-            "ticker": "JAYBARMARU.NS",
-            "rank": 8,
-            "tml_score": 99.6,
-            "industry": "Auto Parts",
-            "action_status": "\ud83d\udea8 Extended"
-        },
-        {
-            "ticker": "PASUPTAC.NS",
-            "rank": 10,
-            "tml_score": 98.1,
-            "industry": "Textile Manufacturing",
-            "action_status": "\ud83d\udea8 Extended"
-        },
-        {
-            "ticker": "SPECTRUM.NS",
-            "rank": 11,
-            "tml_score": 97.6,
-            "industry": "Electrical Equipment & Parts",
-            "action_status": "\ud83d\udfe1 Building Base"
-        },
-        {
-            "ticker": "AVALON.NS",
-            "rank": 6,
-            "tml_score": 96.8,
-            "industry": "Electronic Components",
+            "ticker": "SKMEGGPROD.NS",
+            "rank": 9,
+            "tml_score": 99.1,
+            "industry": "Packaged Foods",
             "action_status": "\ud83d\udea8 Extended"
         },
         {
             "ticker": "SANDHAR.NS",
-            "rank": 13,
-            "tml_score": 95.4,
+            "rank": 10,
+            "tml_score": 98.8,
             "industry": "Auto Parts",
             "action_status": "\ud83d\udea8 Extended"
         },
         {
+            "ticker": "MODISONLTD.NS",
+            "rank": 11,
+            "tml_score": 98.4,
+            "industry": "Electrical Equipment & Parts",
+            "action_status": "\ud83d\udea8 Extended"
+        },
+        {
+            "ticker": "SAKAR.NS",
+            "rank": 12,
+            "tml_score": 98.1,
+            "industry": "Drug Manufacturers - Specialty & Generic",
+            "action_status": "\ud83d\udea8 Extended"
+        },
+        {
+            "ticker": "PARAS.NS",
+            "rank": 13,
+            "tml_score": 97.3,
+            "industry": "Aerospace & Defense",
+            "action_status": "\ud83d\udea8 Extended"
+        },
+        {
+            "ticker": "FCL.NS",
+            "rank": 14,
+            "tml_score": 97.2,
+            "industry": "Specialty Chemicals",
+            "action_status": "\ud83d\udea8 Extended"
+        },
+        {
+            "ticker": "DIACABS.NS",
+            "rank": 15,
+            "tml_score": 96.5,
+            "industry": "Specialty Industrial Machinery",
+            "action_status": "\ud83d\udfe1 Building Base"
+        },
+        {
+            "ticker": "JAYBARMARU.NS",
+            "rank": 16,
+            "tml_score": 96.0,
+            "industry": "Auto Parts",
+            "action_status": "\ud83d\udea8 Extended"
+        },
+        {
+            "ticker": "AVALON.NS",
+            "rank": 18,
+            "tml_score": 94.9,
+            "industry": "Electronic Components",
+            "action_status": "\ud83d\udea8 Extended"
+        },
+        {
             "ticker": "CPPLUS.NS",
-            "rank": 7,
-            "tml_score": 95.1,
+            "rank": 17,
+            "tml_score": 94.9,
             "industry": "Building Products & Equipment",
             "action_status": "\ud83d\udea8 Extended"
         },
         {
-            "ticker": "PREMIERENE.NS",
-            "rank": 8,
-            "tml_score": 94.7,
-            "industry": "Solar",
-            "action_status": "\ud83d\udcc9 21 EMA Pullback"
-        },
-        {
-            "ticker": "DIACABS.NS",
-            "rank": 9,
+            "ticker": "PASUPTAC.NS",
+            "rank": 19,
             "tml_score": 94.4,
-            "industry": "Specialty Industrial Machinery",
-            "action_status": "\ud83d\ude80 10 EMA Power Trend"
-        },
-        {
-            "ticker": "RATEGAIN.NS",
-            "rank": 10,
-            "tml_score": 93.6,
-            "industry": "Software - Application",
-            "action_status": "\ud83d\udd25 Tight VCP"
-        },
-        {
-            "ticker": "PARAS.NS",
-            "rank": 11,
-            "tml_score": 93.5,
-            "industry": "Aerospace & Defense",
-            "action_status": "\ud83d\udfe1 Building Base"
+            "industry": "Textile Manufacturing",
+            "action_status": "\ud83d\udea8 Extended"
         },
         {
             "ticker": "ASIANENE.NS",
-            "rank": 16,
-            "tml_score": 93.1,
+            "rank": 20,
+            "tml_score": 92.2,
             "industry": "Oil & Gas Equipment & Services",
-            "action_status": "\ud83d\udfe1 Building Base"
-        },
-        {
-            "ticker": "FCL.NS",
-            "rank": 18,
-            "tml_score": 92.9,
-            "industry": "Specialty Chemicals",
-            "action_status": "\ud83d\udea8 Extended"
+            "action_status": "\ud83d\udd25 Tight VCP"
         }
     ],
     "US": [
         {
-            "ticker": "ALAB",
+            "ticker": "MU",
             "rank": 1,
-            "tml_score": 96.9,
+            "tml_score": 108.1,
+            "industry": "Semiconductors",
+            "action_status": "\ud83d\udea8 Extended"
+        },
+        {
+            "ticker": "ALAB",
+            "rank": 2,
+            "tml_score": 107.8,
+            "industry": "Semiconductors",
+            "action_status": "\ud83d\udea8 Extended"
+        },
+        {
+            "ticker": "CRDO",
+            "rank": 3,
+            "tml_score": 105.2,
             "industry": "Semiconductors",
             "action_status": "\ud83d\udea8 Extended"
         },
         {
             "ticker": "STX",
-            "rank": 2,
-            "tml_score": 96.6,
+            "rank": 4,
+            "tml_score": 99.4,
             "industry": "Computer Hardware",
             "action_status": "\ud83d\udea8 Extended"
-        },
-        {
-            "ticker": "STRL",
-            "rank": 3,
-            "tml_score": 95.6,
-            "industry": "Engineering & Construction",
-            "action_status": "\ud83d\udea8 Extended"
-        },
-        {
-            "ticker": "AAON",
-            "rank": 4,
-            "tml_score": 93.4,
-            "industry": "Building Products & Equipment",
-            "action_status": "\ud83d\udcc9 21 EMA Pullback"
         },
         {
             "ticker": "MRVL",
             "rank": 5,
-            "tml_score": 92.5,
+            "tml_score": 97.1,
             "industry": "Semiconductors",
+            "action_status": "\ud83d\udea8 Extended"
+        },
+        {
+            "ticker": "STRL",
+            "rank": 6,
+            "tml_score": 96.4,
+            "industry": "Engineering & Construction",
             "action_status": "\ud83d\udea8 Extended"
         },
         {
             "ticker": "WDC",
-            "rank": 6,
-            "tml_score": 91.3,
-            "industry": "Computer Hardware",
-            "action_status": "\ud83d\udcc9 21 EMA Pullback"
-        },
-        {
-            "ticker": "CRDO",
             "rank": 7,
-            "tml_score": 90.6,
-            "industry": "Semiconductors",
-            "action_status": "\ud83d\udcc9 21 EMA Pullback"
+            "tml_score": 94.0,
+            "industry": "Computer Hardware",
+            "action_status": "\ud83d\udee1\ufe0f Buy@21EMA"
         },
         {
             "ticker": "DELL",
             "rank": 8,
-            "tml_score": 90.5,
+            "tml_score": 91.6,
             "industry": "Computer Hardware",
             "action_status": "\ud83d\udea8 Extended"
         },
         {
-            "ticker": "NBIX",
+            "ticker": "AMD",
             "rank": 9,
-            "tml_score": 87.8,
-            "industry": "Drug Manufacturers - Specialty & Generic",
-            "action_status": "\ud83d\udee1\ufe0f Buy@21EMA"
+            "tml_score": 89.0,
+            "industry": "Semiconductors",
+            "action_status": "\ud83d\udea8 Extended"
         },
         {
-            "ticker": "FTNT",
+            "ticker": "ADEA",
             "rank": 10,
-            "tml_score": 84.8,
-            "industry": "Software - Infrastructure",
-            "action_status": "\ud83d\udea8 Extended"
+            "tml_score": 87.9,
+            "industry": "Software - Application",
+            "action_status": "\ud83d\udfe1 Building Base"
         },
         {
             "ticker": "LLY",
             "rank": 11,
-            "tml_score": 83.0,
+            "tml_score": 87.1,
             "industry": "Drug Manufacturers - General",
-            "action_status": "\ud83d\udfe1 Building Base"
+            "action_status": "\ud83d\udd25 Tight VCP"
         },
         {
-            "ticker": "STLD",
+            "ticker": "ASX",
             "rank": 12,
-            "tml_score": 82.9,
-            "industry": "Steel",
-            "action_status": "\ud83d\udfe1 Building Base"
-        },
-        {
-            "ticker": "AMD",
-            "rank": 15,
-            "tml_score": 82.8,
+            "tml_score": 84.6,
             "industry": "Semiconductors",
-            "action_status": "\ud83d\udea8 Extended"
-        },
-        {
-            "ticker": "APLS",
-            "rank": 16,
-            "tml_score": 82.8,
-            "industry": "Biotechnology",
-            "action_status": "\ud83d\udee1\ufe0f Buy@21EMA"
-        },
-        {
-            "ticker": "NUE",
-            "rank": 13,
-            "tml_score": 82.8,
-            "industry": "Steel",
             "action_status": "\ud83d\ude80 10 EMA Power Trend"
         },
         {
             "ticker": "SNX",
-            "rank": 14,
-            "tml_score": 82.8,
+            "rank": 13,
+            "tml_score": 84.3,
             "industry": "Electronics & Computer Distribution",
+            "action_status": "\ud83d\udd25 Tight VCP"
+        },
+        {
+            "ticker": "NBIX",
+            "rank": 14,
+            "tml_score": 84.0,
+            "industry": "Drug Manufacturers - Specialty & Generic",
+            "action_status": "\ud83d\udee1\ufe0f Buy@21EMA"
+        },
+        {
+            "ticker": "LRCX",
+            "rank": 15,
+            "tml_score": 83.3,
+            "industry": "Semiconductor Equipment & Materials",
             "action_status": "\ud83d\udfe1 Building Base"
         },
         {
-            "ticker": "CSCO",
+            "ticker": "STLD",
+            "rank": 16,
+            "tml_score": 83.2,
+            "industry": "Steel",
+            "action_status": "\ud83d\udd25 Tight VCP"
+        },
+        {
+            "ticker": "UMC",
             "rank": 17,
-            "tml_score": 80.3,
-            "industry": "Communication Equipment",
-            "action_status": "\ud83d\ude80 10 EMA Power Trend"
-        },
-        {
-            "ticker": "PANW",
-            "rank": 18,
-            "tml_score": 78.9,
-            "industry": "Software - Infrastructure",
-            "action_status": "\ud83d\udea8 Extended"
-        },
-        {
-            "ticker": "TWLO",
-            "rank": 18,
-            "tml_score": 78.5,
-            "industry": "Software - Infrastructure",
-            "action_status": "\ud83d\udea8 Extended"
-        },
-        {
-            "ticker": "ASX",
-            "rank": 19,
-            "tml_score": 78.0,
+            "tml_score": 82.9,
             "industry": "Semiconductors",
-            "action_status": "\ud83d\udcc9 21 EMA Pullback"
+            "action_status": "\ud83d\udea8 Extended"
+        },
+        {
+            "ticker": "NUE",
+            "rank": 19,
+            "tml_score": 82.8,
+            "industry": "Steel",
+            "action_status": "\ud83d\udee1\ufe0f Buy@21EMA"
+        },
+        {
+            "ticker": "SNDK",
+            "rank": 18,
+            "tml_score": 82.8,
+            "industry": "Computer Hardware",
+            "action_status": "\ud83d\udea8 Extended"
+        },
+        {
+            "ticker": "JBL",
+            "rank": 20,
+            "tml_score": 82.6,
+            "industry": "Electronic Components",
+            "action_status": "\ud83d\ude80 10 EMA Power Trend"
         }
     ]
 }
